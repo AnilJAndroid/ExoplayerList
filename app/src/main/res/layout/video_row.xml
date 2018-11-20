@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:id="@+id/ahv_rlPostNormal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/darker_gray">
+
+        <ImageView
+            android:id="@+id/ahv_ivPlay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_play" />
+
+
+        <!--<com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/ahv_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:auto_show="false"
+            app:repeat_toggle_modes="none"
+            app:resize_mode="fill"
+            app:use_controller="false" />-->
+
+        <SurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
